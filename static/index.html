@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SN-Admin : An administrative interface (mostly) for headless devices.">
+    <meta name="author" content="">
+
+    <title>Tin Project Admin Interface</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link  rel="stylesheet" type="text/css" href="css/app.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">smithee node dev appliance</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container bs-docs-container" id="main">
+        <div class="row" id="alert">&nbsp;</div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="bs-sidebar">
+              <ul class="nav bs-sidenav" id="menu"></ul>
+            </div>
+          </div>
+          <div class="col-md-9" id="contents">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="navbar-default navbar-fixed-bottom" >
+      <div class="container">
+        <p class="copy">
+          Copyright &copy; 2011-2014 <a href="http://smithee.us/">Smithee, Spelvin, Agnew &amp; Plinge</a>.
+          All Rights Reserved
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/backbone-min.js"></script>
+    <script type="text/javascript" src="js/handlebars.js"></script>
+    <script type="text/javascript" src="js/sn-core.js"></script>    
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="/api/extensor"></script>
+  </body>
+</html>

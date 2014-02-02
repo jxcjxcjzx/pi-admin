@@ -1,0 +1,19 @@
+{
+  "favicon": "static/favicon.ico",
+  "access":{
+    "path":"access.csv",
+    "format":"\":date\",\":req[x-forwarded-for]\",\":method\",\":status\",\":req[host]\",\":url\",\":referrer\",\":user-agent\""
+  },
+  "listen":{
+    "port":9001
+  },
+  "title":"sn-admin",
+  "static":"static",
+  "templates":"templates",
+  "source": "src/extensor",
+  "extensions": [ 
+    "ext/intro",
+    "ext/user",
+    "ext/network"
+  ]
+}

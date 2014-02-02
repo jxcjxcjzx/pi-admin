@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.copy {
+    text-align: center;
+    color: #999999;
+    min-height: 20px;
+}
+
+#alert {
+//    display: none;
+}
+
+#main {
+    padding-top: 66px;
+    padding-bottom: 21px;
+}
+
+#footer {
+    max-height: 16px;
+    font-size: 80%;
+}
