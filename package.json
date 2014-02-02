@@ -1,6 +1,6 @@
 {
   "name": "sn-admin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Web-Based Administrative Interface (mostly) for Headless Devices",
   "maintainers": [
     {
@@ -20,7 +20,7 @@
     "url": "https://github.com/smithee-us/sn-admin"
   },
   "dependencies": {
-    "sn-core": ">= 0.0.11",
+    "sn-core": ">= 0.0.12",
     "sn-props": ">= 0.2.0",
     "sn-approute": ">= 1.0.5",
     "connect": "2.12.0"

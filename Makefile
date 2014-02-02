@@ -37,3 +37,12 @@ clean:
 
 ./builddir :
 	mkdir -p ./build
+
+install-deb :
+	if [ -d /etc/init.d ]; then \
+    cp init/sn-admin /etc/init.d; chmod 755 /etc/init.d/sn-admin; \
+    if [ -e /etc/init.d/.depend.start ]; then \
+      insserv sn-admin; else \
+      update-rc.d sn-admin defaults; \
+    fi \
+  fi

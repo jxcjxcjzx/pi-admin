@@ -26,17 +26,14 @@ $(document).ready ( function () {
     _get( "/api/menu", function( err, data ) {
       $('#menu').html( Handlebars.compile( templates.get( "menu" ) ) ( data ) );
     } );
-    _get( "/api/user", function( err, data ) {
-      users = data;
-	    var AppRouter = Backbone.Router.extend( workspace_options );
-      var approuter = new AppRouter();
-      Backbone.history.start();
-    } );
+	  var AppRouter = Backbone.Router.extend( workspace_options );
+    var approuter = new AppRouter();
+    Backbone.history.start();
   } );
 
   var keys = [0,0,0,0,0,0,0,0,0,0];
   var index = 0;
-  var konami = [38,38,40,40,37,39,37,39,65,66];
+  var konami = [38,38,40,40,37,39,37,39,66,65];
 
   $(document).on( 'keydown', function( e ) {
     keys[ index++ ] = e.which;
@@ -63,7 +60,7 @@ $(document).ready ( function () {
     }
 
     if( esc ) {
-      location.href = "/#easter";
+      _konami();
     }
   } );
 } );
@@ -140,7 +137,7 @@ function _raise_alert( type, message ) {
   if( timer ) {
     clearTimeout( timer );
     $('.close').trigger('click');
-  } 
+  }
 
   $('#alert').html( text );
 
@@ -193,6 +190,7 @@ function _cookie_delete( name ) {
   document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
-function render_menu () {
-
+function _konami() {
+  // Add code here to run after the konami code is entered
+  console.log( "konami code entered" );
 }

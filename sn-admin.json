@@ -12,8 +12,6 @@
   "templates":"templates",
   "source": "src/extensor",
   "extensions": [ 
-    "ext/intro",
-    "ext/user",
-    "ext/network"
+    "ext/intro"
   ]
 }
