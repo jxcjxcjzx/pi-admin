@@ -27,7 +27,7 @@ fi
 DESC="sn-admin service"
 NAME=sn-admin
 DAEMON=`which sn-app`
-DAEMON_ARGS="--nofork --config file://sn-admin.json"
+DAEMON_ARGS="--config file://sn-admin.json --nofork"
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 SNAPPDIR=`dirname $DAEMON`
