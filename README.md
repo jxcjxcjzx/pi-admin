@@ -1,4 +1,4 @@
-sn-admin
+pi-admin
 ========
 
-Web-Based Administrative Interface for Headless Devices
+Web-Based Administrative Interface for Headless Raspberry Pi's

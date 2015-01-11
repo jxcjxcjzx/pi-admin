@@ -5,9 +5,10 @@
     "format":"\":date\",\":req[x-forwarded-for]\",\":method\",\":status\",\":req[host]\",\":url\",\":referrer\",\":user-agent\""
   },
   "listen":{
-    "port":9001
+    "port":9000,
+    "host":"127.0.0.1"
   },
-  "title":"sn-admin",
+  "title":"pi-admin",
   "static":"static",
   "templates":"templates",
   "source": "src/extensor",

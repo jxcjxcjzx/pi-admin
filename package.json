@@ -1,7 +1,7 @@
 {
-  "name": "sn-admin",
+  "name": "pi-admin",
   "version": "0.0.5",
-  "description": "Web-Based Administrative Interface (mostly) for Headless Devices",
+  "description": "Web-Based Administrative Interface Headless Raspberry Pi's",
   "maintainers": [
     {
       "name": "Meadhbh Hamrick",
@@ -12,12 +12,12 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/smithee-us/sn-admin/raw/master/LICENSE"
+      "url": "https://github.com/smithee-us/pi-admin/raw/master/LICENSE"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/smithee-us/sn-admin"
+    "url": "https://github.com/smithee-us/pi-admin"
   },
   "dependencies": {
     "sn-core": ">= 0.0.12",
@@ -28,5 +28,5 @@
   "scripts": {
     "install": "make"
   },
-  "keywords": [ "admin", "headless" ]
+  "keywords": [ "admin", "headless", "raspberry pi" ]
 }
