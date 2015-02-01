@@ -19,10 +19,12 @@
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 
-# Some people put node in /opt
-if [ -x /opt/node/bin/node ] ; then
-  PATH=/opt/node/bin:$PATH
-fi
+# Smithee, et al. sometimes puts node in /opt, sometimes in /usr/local
+for tdir in /opt/node /usr/local; do
+  if [ -x ${tdir}/bin/node ] ; then
+    PATH=${tdir}/bin:$PATH
+  fi
+done
 
 DESC="pi-admin service"
 NAME=pi-admin
