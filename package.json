@@ -1,6 +1,6 @@
 {
   "name": "pi-admin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Web-Based Administrative Interface Headless Raspberry Pi's",
   "maintainers": [
     {
